@@ -3,27 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC4019C4261B7EB800395D1E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CC4019C3261B7EB800395D1E /* TextFieldEffects */; };
 		CCEB5177261B488700F08DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB5176261B488700F08DD2 /* AppDelegate.swift */; };
 		CCEB5179261B488700F08DD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB5178261B488700F08DD2 /* SceneDelegate.swift */; };
-		CCEB517B261B488700F08DD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB517A261B488700F08DD2 /* ViewController.swift */; };
 		CCEB517E261B488700F08DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEB517C261B488700F08DD2 /* Main.storyboard */; };
 		CCEB5180261B488B00F08DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEB517F261B488B00F08DD2 /* Assets.xcassets */; };
 		CCEB5183261B488B00F08DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEB5181261B488B00F08DD2 /* LaunchScreen.storyboard */; };
+		CCF83BCD261B598F00F6C1AA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = CCF83BCC261B598F00F6C1AA /* Then */; };
+		CCF83BD1261B599F00F6C1AA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CCF83BD0261B599F00F6C1AA /* SnapKit */; };
+		CCF83BDA261B5AA400F6C1AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF83BD9261B5AA400F6C1AA /* LoginViewController.swift */; };
+		CCF83BDD261B5AB800F6C1AA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF83BDC261B5AB800F6C1AA /* SignUpViewController.swift */; };
+		CCF83BE0261B5AC000F6C1AA /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF83BDF261B5AC000F6C1AA /* ConfirmViewController.swift */; };
+		CCF83BE5261B5BA800F6C1AA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF83BE4261B5BA800F6C1AA /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CCEB5173261B488700F08DD2 /* 28th_BESOPT_1stWeek_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 28th_BESOPT_1stWeek_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEB5176261B488700F08DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCEB5178261B488700F08DD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCEB517A261B488700F08DD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCEB517D261B488700F08DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCEB517F261B488B00F08DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCEB5182261B488B00F08DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CCEB5184261B488B00F08DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEB5184261B488B00F08DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = 28th_BESOPT_1stWeek_Assignment/Supports/Info.plist; sourceTree = SOURCE_ROOT; };
+		CCF83BD9261B5AA400F6C1AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CCF83BDC261B5AB800F6C1AA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CCF83BDF261B5AC000F6C1AA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		CCF83BE4261B5BA800F6C1AA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4019C4261B7EB800395D1E /* TextFieldEffects in Frameworks */,
+				CCF83BCD261B598F00F6C1AA /* Then in Frameworks */,
+				CCF83BD1261B599F00F6C1AA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,66 @@
 		CCEB5175261B488700F08DD2 /* 28th_BESOPT_1stWeek_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				CCEB5176261B488700F08DD2 /* AppDelegate.swift */,
-				CCEB5178261B488700F08DD2 /* SceneDelegate.swift */,
-				CCEB517A261B488700F08DD2 /* ViewController.swift */,
-				CCEB517C261B488700F08DD2 /* Main.storyboard */,
-				CCEB517F261B488B00F08DD2 /* Assets.xcassets */,
-				CCEB5181261B488B00F08DD2 /* LaunchScreen.storyboard */,
-				CCEB5184261B488B00F08DD2 /* Info.plist */,
+				CCF83BE2261B5B9600F6C1AA /* Global */,
+				CCF83BD5261B59E300F6C1AA /* Supports */,
+				CCF83BD4261B59D900F6C1AA /* Screens */,
 			);
 			path = 28th_BESOPT_1stWeek_Assignment;
+			sourceTree = "<group>";
+		};
+		CCF83BD3261B59C000F6C1AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCF83BD9261B5AA400F6C1AA /* LoginViewController.swift */,
+				CCF83BDC261B5AB800F6C1AA /* SignUpViewController.swift */,
+				CCF83BDF261B5AC000F6C1AA /* ConfirmViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CCF83BD4261B59D900F6C1AA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CCF83BD3261B59C000F6C1AA /* ViewControllers */,
+				CCF83BD7261B5A1200F6C1AA /* Storyboards */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CCF83BD5261B59E300F6C1AA /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				CCEB5184261B488B00F08DD2 /* Info.plist */,
+				CCEB517F261B488B00F08DD2 /* Assets.xcassets */,
+				CCEB5176261B488700F08DD2 /* AppDelegate.swift */,
+				CCEB5178261B488700F08DD2 /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		CCF83BD7261B5A1200F6C1AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CCEB517C261B488700F08DD2 /* Main.storyboard */,
+				CCEB5181261B488B00F08DD2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CCF83BE2261B5B9600F6C1AA /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CCF83BE3261B5B9B00F6C1AA /* Extensions */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CCF83BE3261B5B9B00F6C1AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CCF83BE4261B5BA800F6C1AA /* UIView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,11 @@
 			dependencies = (
 			);
 			name = 28th_BESOPT_1stWeek_Assignment;
+			packageProductDependencies = (
+				CCF83BCC261B598F00F6C1AA /* Then */,
+				CCF83BD0261B599F00F6C1AA /* SnapKit */,
+				CC4019C3261B7EB800395D1E /* TextFieldEffects */,
+			);
 			productName = 28th_BESOPT_1stWeek_Assignment;
 			productReference = CCEB5173261B488700F08DD2 /* 28th_BESOPT_1stWeek_Assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +178,11 @@
 				Base,
 			);
 			mainGroup = CCEB516A261B488700F08DD2;
+			packageReferences = (
+				CCF83BCB261B598F00F6C1AA /* XCRemoteSwiftPackageReference "Then" */,
+				CCF83BCF261B599F00F6C1AA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CC4019C2261B7EB800395D1E /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+			);
 			productRefGroup = CCEB5174261B488700F08DD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCEB517B261B488700F08DD2 /* ViewController.swift in Sources */,
+				CCF83BE5261B5BA800F6C1AA /* UIView+.swift in Sources */,
+				CCF83BE0261B5AC000F6C1AA /* ConfirmViewController.swift in Sources */,
+				CCF83BDA261B5AA400F6C1AA /* LoginViewController.swift in Sources */,
 				CCEB5177261B488700F08DD2 /* AppDelegate.swift in Sources */,
+				CCF83BDD261B5AB800F6C1AA /* SignUpViewController.swift in Sources */,
 				CCEB5179261B488700F08DD2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = 28th_BESOPT_1stWeek_Assignment/Supports/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -271,6 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = 28th_BESOPT_1stWeek_Assignment/Supports/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -288,7 +366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QS42RPKQCD;
-				INFOPLIST_FILE = 28th_BESOPT_1stWeek_Assignment/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/28th_BESOPT_1stWeek_Assignment/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QS42RPKQCD;
-				INFOPLIST_FILE = 28th_BESOPT_1stWeek_Assignment/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/28th_BESOPT_1stWeek_Assignment/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +419,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC4019C2261B7EB800395D1E /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		CCF83BCB261B598F00F6C1AA /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		CCF83BCF261B599F00F6C1AA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC4019C3261B7EB800395D1E /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC4019C2261B7EB800395D1E /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		CCF83BCC261B598F00F6C1AA /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCF83BCB261B598F00F6C1AA /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		CCF83BD0261B599F00F6C1AA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCF83BCF261B599F00F6C1AA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCEB516B261B488700F08DD2 /* Project object */;
 }
