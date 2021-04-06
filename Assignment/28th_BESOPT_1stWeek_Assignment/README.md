@@ -11,9 +11,7 @@
 
 #### 결과 화면
 
-<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9xedjwmxj30u01sxgoi.jpg" alt="simulator_screenshot_8E131294-0872-4766-9958-F0C45EEB4CC4" style="zoom:16%;" /><img src="/Users/hansol/Library/Application Support/typora-user-images/simulator_screenshot_9DCAA809-A730-4CF4-B21E-EF19959DC48B.png" alt="simulator_screenshot_9DCAA809-A730-4CF4-B21E-EF19959DC48B" style="zoom:15%;" /><img src="/Users/hansol/Library/Application Support/typora-user-images/simulator_screenshot_88B6EE9F-2359-4FF6-A230-DD582B6F106D.png" alt="simulator_screenshot_88B6EE9F-2359-4FF6-A230-DD582B6F106D" style="zoom:15%;" />
-
-
+![merge_from_ofoct](https://tva1.sinaimg.cn/large/008eGmZEgy1gp9z3j84gvj315l0u0wjj.jpg)
 
 <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9xkz6i74g309u0jshdx.gif" alt="Apr-06-2021 13-52-09" style="zoom:70%;" />
 
@@ -54,9 +52,9 @@
 ![스크린샷 2021-04-06 오후 2.13.06](https://tva1.sinaimg.cn/large/008eGmZEgy1gp9y61a6s2j30uq08kju1.jpg)
 
 			1. UIAlertController 를 만든다.
-   			2. UIAlertAction을 만든다.
-   			3. UIAlertController에 UIAlertAction에 대한 액션을 추가해준다.
-   			4. 마지막으로, UIAlertController로 present를 통해 modal로 화면전환을 한다.
+			2. UIAlertAction을 만든다.
+			3. UIAlertController에 UIAlertAction에 대한 액션을 추가해준다.
+			4. 마지막으로, UIAlertController로 present를 통해 modal로 화면전환을 한다.
 
 
 
