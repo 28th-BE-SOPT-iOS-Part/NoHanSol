@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
     $0.numberOfLines = 2
   }
   let emailTextField = HoshiTextField().then {
+    // textField placeholder 텍스트 크기 조정을 위해 NSAttributedString 사용
     $0.attributedPlaceholder = NSAttributedString(string: "이메일 또는 전화번호",
                                                   attributes: [NSAttributedString.Key.font :
                                                                 UIFont.systemFont(ofSize: 15)])

@@ -34,19 +34,7 @@ class ConfirmViewController: UIViewController {
   //MARK: - Helpers
   func layout() {
     self.view.add(self.welcomeLabel) {
-      if let context = self.email {
-        $0.text = "\(context)님\n환영합니다"
-      }
-      else {
-        $0.text = ""
-      }
-      let attString = NSMutableAttributedString(string: self.welcomeLabel.text!)
-      let paragraphStyle = NSMutableParagraphStyle()
-      paragraphStyle.lineSpacing = 10
-      attString.addAttributes([NSAttributedString.Key.paragraphStyle: paragraphStyle],
-                              range: NSMakeRange(0, attString.length))
-      $0.attributedText = attString
-      $0.textAlignment = .center
+      self.makeTitle()
       $0.snp.makeConstraints {
         $0.top.equalTo(self.view.snp.top).offset(270)
         $0.centerX.equalTo(self.view.snp.centerX)
@@ -61,6 +49,22 @@ class ConfirmViewController: UIViewController {
         $0.height.equalTo(40)
       }
     }
+  }
+  // welcome 라벨의 줄간격 조절을 하기 위해 attributedString 사용.
+  func makeTitle() {
+    if let context = self.email {
+      self.welcomeLabel.text = "\(context)님\n환영합니다"
+    }
+    else {
+      self.welcomeLabel.text = ""
+    }
+    let attString = NSMutableAttributedString(string: self.welcomeLabel.text!)
+    let paragraphStyle = NSMutableParagraphStyle()
+    paragraphStyle.lineSpacing = 10
+    attString.addAttributes([NSAttributedString.Key.paragraphStyle: paragraphStyle],
+                            range: NSMakeRange(0, attString.length))
+    self.welcomeLabel.attributedText = attString
+    self.welcomeLabel.textAlignment = .center
   }
   @objc func touchUpBack() {
     self.dismiss(animated: true, completion: nil)

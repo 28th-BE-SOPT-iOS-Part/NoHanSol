@@ -116,21 +116,44 @@ class SignUpViewController: UIViewController {
     }
   }
   @objc func touchUpLogin() {
+    // 1. 텍스트필드 모두 텍스트가 입력되었을 떄
     if self.emailTextField.hasText &&
         self.passwordTextField.hasText &&
         self.confirmPasswordTextField.hasText {
-      guard let confirmVC = self.storyboard?.instantiateViewController(
-              identifier: "ConfirmViewController") as? ConfirmViewController else { return }
-      confirmVC.modalPresentationStyle = .fullScreen
-      confirmVC.email = self.emailTextField.text
-      self.present(confirmVC, animated: true, completion: {
-                    self.navigationController?.popViewController(animated: false)})
+      // 1-1. 텍스트필드 모두 텍스트가 입력되었지만 패스워드와 확인패스워드가 불일치할 때
+      if self.passwordTextField.text != self.confirmPasswordTextField.text {
+        let alert = UIAlertController(title: "회원가입 실패",
+                                      message: "다른 패스워드를 입력하셨네요😭",
+                                      preferredStyle: UIAlertController.Style.alert)
+        let closeAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+        alert.addAction(closeAction)
+        present(alert, animated: true, completion: {
+          self.passwordTextField.text = nil
+          self.confirmPasswordTextField.text = nil
+        })
+      }
+      // 1-2. 텍스트필드 모두 텍스트가 입력되고 패스워드도 일치할 때
+      else {
+        guard let confirmVC = self.storyboard?.instantiateViewController(
+                identifier: "ConfirmViewController") as? ConfirmViewController else { return }
+        confirmVC.modalPresentationStyle = .fullScreen
+        confirmVC.email = self.emailTextField.text
+        self.present(confirmVC, animated: true, completion: {
+                      self.navigationController?.popViewController(animated: false)})
+      }
     }
+    // 2. 텍스트필드에 하나라도 입력값이 없을 때 UIAlertController를 띄워 노티를 제공
     else {
-      let alert = UIAlertController(title: "회원가입 실패", message: "이메일, 비밀번호를 입력해주세요😭", preferredStyle: UIAlertController.Style.alert)
+      let alert = UIAlertController(title: "회원가입 실패",
+                                    message: "이메일, 비밀번호를 입력해주세요😭",
+                                    preferredStyle: UIAlertController.Style.alert)
       let closeAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
       alert.addAction(closeAction)
-      present(alert, animated: true, completion: nil)
+      present(alert, animated: true, completion: {
+        self.emailTextField.text = nil
+        self.passwordTextField.text = nil
+        self.confirmPasswordTextField.text = nil
+      })
     }
   }
 }
