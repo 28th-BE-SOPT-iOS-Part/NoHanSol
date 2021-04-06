@@ -13,7 +13,7 @@
 
 ![merge_from_ofoct](https://tva1.sinaimg.cn/large/008eGmZEgy1gp9z3j84gvj315l0u0wjj.jpg)
 
-<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9xkz6i74g309u0jshdx.gif" alt="Apr-06-2021 13-52-09" style="zoom:70%;" />
+<video src="/Users/hansol/Desktop/Apr-06-2021 14-48-02.mp4"></video>
 
 
 
