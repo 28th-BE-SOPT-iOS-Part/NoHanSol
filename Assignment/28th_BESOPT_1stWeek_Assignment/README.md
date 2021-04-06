@@ -13,7 +13,7 @@
 
 ![merge_from_ofoct](https://tva1.sinaimg.cn/large/008eGmZEgy1gp9z3j84gvj315l0u0wjj.jpg)
 
-<video src="/Users/hansol/Desktop/Apr-06-2021 14-48-02.mp4"></video>
+<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9zf2v3u2g309i0j8x6q.gif" alt="Apr-06-2021 14-56-04" style="zoom:67%;" />
 
 
 
@@ -42,19 +42,19 @@
    : 이번 과제 중 요구사항에 텍스트필드에 텍스트가 없을 때는 버튼을 눌러도 넘어가지 않는다! 라는 부분이 있었어요.
    그냥 안넘어가면 좀 심심해보여서 경고팝업이 뜨도록 하면 어떨까? 해서 써봤습니다.
    바로 아래처럼요! ⬇️
-
-<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9y31oez1g309i0ie1kx.gif" alt="Apr-06-2021 14-10-07" style="zoom:50%;" />
-
-​	
-
-​	구현한 코드는 아래와 같아요!
-
-![스크린샷 2021-04-06 오후 2.13.06](https://tva1.sinaimg.cn/large/008eGmZEgy1gp9y61a6s2j30uq08kju1.jpg)
-
-			1. UIAlertController 를 만든다.
-			2. UIAlertAction을 만든다.
-			3. UIAlertController에 UIAlertAction에 대한 액션을 추가해준다.
-			4. 마지막으로, UIAlertController로 present를 통해 modal로 화면전환을 한다.
+   
+   <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9y31oez1g309i0ie1kx.gif" alt="Apr-06-2021 14-10-07" style="zoom:50%;" />
+   
+   
+   
+   구현한 코드는 아래와 같아요!
+   
+   ![스크린샷 2021-04-06 오후 2.13.06](https://tva1.sinaimg.cn/large/008eGmZEgy1gp9zbyy22vj30uq08k0u8.jpg)
+   
+   		1. UIAlertController 를 만든다.
+   		2. UIAlertAction을 만든다.
+   		3. UIAlertController에 UIAlertAction에 대한 액션을 추가해준다.
+   		4. 마지막으로, UIAlertController로 present를 통해 modal로 화면전환을 한다.
 
 
 
