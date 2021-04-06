@@ -68,6 +68,5 @@ class ConfirmViewController: UIViewController {
   }
   @objc func touchUpBack() {
     self.dismiss(animated: true, completion: nil)
-    
   }
 }

@@ -132,6 +132,7 @@ class LoginViewController: UIViewController {
   }
   
   @objc func touchUpLogin() {
+    // 1. 모든 텍스트필드에 텍스트가 있을 때
     if self.emailTextField.hasText && self.passwordTextField.hasText {
       guard let confirmVC = self.storyboard?.instantiateViewController(
               identifier: "ConfirmViewController") as? ConfirmViewController else { return }
@@ -142,8 +143,11 @@ class LoginViewController: UIViewController {
         self.passwordTextField.text = nil
       })
     }
+    // 2. 텍스트필드 중 텍스트가 없는 텍스트필드가 존재할 때
     else {
-      let alert = UIAlertController(title: "로그인 실패", message: "이메일, 비밀번호를 입력해주세요😭", preferredStyle: UIAlertController.Style.alert)
+      let alert = UIAlertController(title: "로그인 실패",
+                                    message: "이메일, 비밀번호를 입력해주세요😭",
+                                    preferredStyle: UIAlertController.Style.alert)
       let closeAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
       alert.addAction(closeAction)
       present(alert, animated: true, completion: nil)
