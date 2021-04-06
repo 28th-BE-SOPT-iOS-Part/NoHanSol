@@ -11,7 +11,7 @@
 
 #### 결과 화면
 
-<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9xedjwmxj30u01sxgoi.jpg" alt="simulator_screenshot_8E131294-0872-4766-9958-F0C45EEB4CC4" style="zoom:16.25%;" /><img src="/Users/hansol/Library/Application Support/typora-user-images/simulator_screenshot_9DCAA809-A730-4CF4-B21E-EF19959DC48B.png" alt="simulator_screenshot_9DCAA809-A730-4CF4-B21E-EF19959DC48B" style="zoom:15%;" /><img src="/Users/hansol/Library/Application Support/typora-user-images/simulator_screenshot_88B6EE9F-2359-4FF6-A230-DD582B6F106D.png" alt="simulator_screenshot_88B6EE9F-2359-4FF6-A230-DD582B6F106D" style="zoom:15%;" />
+<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gp9xedjwmxj30u01sxgoi.jpg" alt="simulator_screenshot_8E131294-0872-4766-9958-F0C45EEB4CC4" style="zoom:16%;" /><img src="/Users/hansol/Library/Application Support/typora-user-images/simulator_screenshot_9DCAA809-A730-4CF4-B21E-EF19959DC48B.png" alt="simulator_screenshot_9DCAA809-A730-4CF4-B21E-EF19959DC48B" style="zoom:15%;" /><img src="/Users/hansol/Library/Application Support/typora-user-images/simulator_screenshot_88B6EE9F-2359-4FF6-A230-DD582B6F106D.png" alt="simulator_screenshot_88B6EE9F-2359-4FF6-A230-DD582B6F106D" style="zoom:15%;" />
 
 
 
