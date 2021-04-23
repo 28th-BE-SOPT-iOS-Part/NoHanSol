@@ -19,6 +19,7 @@ class KakaoProfileViewController: UIViewController {
   
   let closeButton = UIButton().then {
     $0.setBackgroundImage(UIImage(named: "profileCloseBtn"), for: .normal)
+    $0.addTarget(self, action: #selector(swipeDown), for: .touchUpInside)
   }
   let profileImageContainerView = UIView()
   let profileImageView = UIImageView().then {
