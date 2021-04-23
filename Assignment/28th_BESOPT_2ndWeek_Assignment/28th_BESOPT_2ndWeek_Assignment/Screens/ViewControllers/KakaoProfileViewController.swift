@@ -11,15 +11,17 @@ import UIKit
 
 class KakaoProfileViewController: UIViewController {
   
+  // MARK: - LifeCycles
   override func viewDidLoad() {
     super.viewDidLoad()
     layout()
-    swipeDownToDismiss()
+    panDownToDismiss()
   }
   
+  // MARK: - Properties
   let closeButton = UIButton().then {
     $0.setBackgroundImage(UIImage(named: "profileCloseBtn"), for: .normal)
-    $0.addTarget(self, action: #selector(swipeDown), for: .touchUpInside)
+    $0.addTarget(self, action: #selector(closeButtonClicked), for: .touchUpInside)
   }
   let profileImageContainerView = UIView()
   let profileImageView = UIImageView().then {
@@ -38,11 +40,9 @@ class KakaoProfileViewController: UIViewController {
     $0.axis = .horizontal
     $0.distribution = .fillEqually
   }
-  
   let talkContainerView = UIView()
   let editContainerView = UIView()
   let storyContainerView = UIView()
-  
   let talkContainerButton = UIButton().then {
     $0.showsTouchWhenHighlighted = true
   }
@@ -52,11 +52,9 @@ class KakaoProfileViewController: UIViewController {
   let storyContainerButton = UIButton().then {
     $0.showsTouchWhenHighlighted = true
   }
-  
   let talkImageContainerView = UIView()
   let editImageContainerView = UIView()
   let storyImageContainerView = UIView()
-  
   let talkImageView = UIImageView().then {
     $0.image = UIImage(named: "profileTalkImg")
   }
@@ -66,7 +64,6 @@ class KakaoProfileViewController: UIViewController {
   let storyImageView = UIImageView().then {
     $0.image = UIImage(named: "profileStoryImg")
   }
-  
   let talkLabel = UILabel().then {
     $0.text = "나와의 채팅"
     $0.textColor = UIColor(red: 236/255, green: 237/255, blue: 238/255, alpha: 1)
@@ -86,6 +83,7 @@ class KakaoProfileViewController: UIViewController {
     $0.textAlignment = .center
   }
   
+  // MARK: - Helpers
   func layout() {
     self.view.backgroundColor = UIColor(red: 135/255, green: 145/255, blue: 152/255, alpha: 1)
     self.view.add(self.closeButton) {
@@ -95,7 +93,7 @@ class KakaoProfileViewController: UIViewController {
         $0.width.height.equalTo(14)
       }
     }
-   
+    
     self.view.add(self.stackContainerView) {
       $0.snp.makeConstraints {
         $0.centerX.equalTo(self.view.snp.centerX)
@@ -198,16 +196,47 @@ class KakaoProfileViewController: UIViewController {
       }
     }
   }
-  func swipeDownToDismiss() {
-    let swipeAction = UISwipeGestureRecognizer(target: self, action: #selector(swipeDown))
-    swipeAction.direction = .down
-    self.view.addGestureRecognizer(swipeAction)
+  
+  func panDownToDismiss() {
+    let panAction = UIPanGestureRecognizer(target: self, action: #selector(swipeDown))
+    self.view.addGestureRecognizer(panAction)
   }
+  
   @objc func printClickedLog() {
     print("눌렸습니다.")
   }
-  @objc func swipeDown() {
-    self.dismiss(animated: true, completion: nil)
+  
+  @objc func closeButtonClicked() {
+    dismiss(animated: true, completion: nil)
   }
   
+  @objc func swipeDown(_ sender: UIPanGestureRecognizer) {
+    // flicker 속도 기준점. 아이폰에서 쓸 경우엔 300정도이지만 시뮬레이터는 마우스 속도가 워낙 빨라 2000으로 설정.
+    let speedThreshold: CGFloat = 2000
+    let velocity = sender.velocity(in: view)
+    let location = sender.translation(in: view)
+    let firstLocation = CGPoint(x: 0, y: 0)
+    let interval = location.y - firstLocation.y
+    if velocity.y.magnitude > speedThreshold {
+      dismiss(animated: true, completion: nil)
+    }
+    else {
+      if sender.state == .changed && interval > 0 {
+        view.frame = CGRect(x: 0, y: interval, width: view.frame.width, height: view.frame.height)
+      }
+      else if sender.state == .ended {
+        if interval > view.frame.height/2 {
+          dismiss(animated: true, completion: nil)
+        }
+        else {
+          UIView.animate(withDuration: 0.2, animations:
+                          {self.view.frame = CGRect(x: 0,
+                                                    y: 0,
+                                                    width: self.view.frame.width,
+                                                    height: self.view.frame.height)})
+          
+        }
+      }
+    }
+  }
 }

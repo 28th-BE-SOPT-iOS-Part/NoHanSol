@@ -1,3 +1,4 @@
+
 ![2주차 과제 표지](https://tva1.sinaimg.cn/large/008i3skNgy1gptmt7lukfj31hc0u0jwp.jpg)
 
 ------
@@ -68,9 +69,10 @@
 - tabbar 의 title 은 제가 없는 걸 좋아하기 때문에 넣지 않았구요 뷰 또한 정말 연결만 시켜두었습니다.
 
 - x 버튼을 눌렀을 때 dismiss 되는 것은 selector 를 사용하여 objc method 를 구현해서 연결시킨 뒤 objc 메소드 안에 dismiss 를 구현했어요!
-  ![스크린샷 2021-04-13 오후 8.42.28](/Users/hansol/Library/Application Support/typora-user-images/스크린샷 2021-04-13 오후 8.42.28.png)
   
-  ![2주차 과제 형식_6](https://tva1.sinaimg.cn/large/008eGmZEgy1gpicrrwvqyj30jg02wwek.jpg)
+  ![스크린샷 2021-04-23 오후 3.32.57](https://tva1.sinaimg.cn/large/008i3skNgy1gpto0fxlqlj30ym03qjt3.jpg)
+  
+  ![스크린샷 2021-04-23 오후 3.32.29](https://tva1.sinaimg.cn/large/008i3skNgy1gptnzxnulaj30k8030q3i.jpg)
 
 ------
 
@@ -84,15 +86,46 @@
 
 #### 설명
 
-- 저는 UISwipeGestureRecognizer 를 사용해서 구현했어요
+- ~~저는 UISwipeGestureRecognizer 를 사용해서 구현했어요~~
 
-- 이는 말 그대로 View 에 Swipe 하는 Gesture 를 기억하게 하고 유저가 그 제스쳐를 했을 때 특정 액션(함수)을 수행할 수 있게 하는 기능이에요.
+- ~~이는 말 그대로 View 에 Swipe 하는 Gesture 를 기억하게 하고 유저가 그 제스쳐를 했을 때 특정 액션(함수)을 수행할 수 있게 하는 기능이에요.~~
 
-- 아래로 swipe 했을 때 dismiss 가 실행되어야 함으로 swipeAction 의 방향은 당연히 .down 되어야겠져
+- ~~아래로 swipe 했을 때 dismiss 가 실행되어야 함으로 swipeAction 의 방향은 당연히 .down 되어야겠져~~
 
-- 마지막에 꼭 view에 이 gestureRecognizer 를 추가해줘야 합니다!!
+- ~~마지막에 꼭 view에 이 gestureRecognizer 를 추가해줘야 합니다!!~~
 
-  ![스크린샷 2021-04-13 오후 8.56.02](https://tva1.sinaimg.cn/large/008eGmZEgy1gpid5fwupuj30yw08076j.jpg)
+- 세상에 마상에,,, 다른 파트원분들의 리드미를 읽다가 UIPanGestureRecognizer 를 발견했지 뭐에여,,,
+
+- 역시 다른분들의 코드를 볼 떄마다 많은 것을 배웁니다,,,
+
+- 그래서 저도 바꿔봤어요 이렇게 말이져!
+
+  ![스크린샷 2021-04-23 오후 3.49.05](https://tva1.sinaimg.cn/large/008i3skNgy1gptoh73ttvj30zm04omym.jpg)
+
+  ![스크린샷 2021-04-23 오후 3.50.37](https://tva1.sinaimg.cn/large/008i3skNgy1gptoitq40lj314o0rutgq.jpg)
+
+- 우선 코드가 상당히 더럽네요 제출 당일이기에 급해서 말이져,,, 조만간 수정할게여,,,
+- 헷갈린 부분에 대한 이유나 한 번 듣고 가봅시다.
+- Swipe vs Pan
+  - Swipe : 즉각적인 Gesture 인식이 이루어지는 방식.
+  - Pan : 보통 drag라고 하는 방식으로 연속적인 Gesture의 인식이 이루어지며 시간에 따른 위치와 움직임에 대한 인식이 이루어지는 방식.
+  - 뭐,,, 헷갈릴만 했네요 번역하느라 힘들었어요^ㅡ^
+- 제가 느낀 가장 큰 차이점은 Pan에는 velocity와 translation이 있고 상태(state)가 있다는 거에요.
+- velocity
+  - velocity는 말 그대로 panning의 속도입니다.
+  - 속도를 어떻게 수치로 나타내는가? 1초당 움직인 포인트입니다. 예를 들면, 300이면 1초에 300포인트를 움직이는 속도라는 거죠! 단위로 쓰자면,,, point/sec 가 되겠네요.
+  - 저는 flicker와 일반 panning을 구분하기 위해서 사용했는데요, 저희가 보통 핸드폰을 사용할 때 빠르게 드래그를 하게 되면 창이 닫히거나 없어지는 액션들을 많이 보게 되는데 바로 이것이 flicker 입니다.
+  - 일반 아이폰은 보통 flicker를 판단하는 기준이 300-400 정도 된다고 해요. 하지만 전 시뮬레이터에서 돌려서 300으로 설정하면 무조건 flicker라고 판단하더라구요.(SE2 기준) 그래서 좀 높여봤습니다.
+  - velocity.x 는 수평으로 움직인 속도, velocity.y는 수직으로 움직인 속도에요. .magnitude는 절대값을 나타내구요. 우리는 수직으로 패닝을 하기 때문에, 따라서, 수직으로 움직인 속도의 절댓값이 2000보다 크면 flicker 라고 인식을 하겠다!! 입니다.
+  - 절댓값이 있다는 건 부호가 존재하고 그 말은 곧 방향 또한 존재한다는 거겠죠 ㅎㅎ 너무 길어지니깐 이건 패스
+- translation
+  - translation은 패닝을 하기 위해 클릭하고 있는 지점을 CGFloat 형식으로 반환합니다. 
+  - 따라서 view의 가장 위 부분과 손가락이 누르고 있는 지점과의 거리(interval)를 계산할 수 있어요.
+  - 그 동작은 state에 따라 달리 하도록 선언했는데 그건 밑에서 보시죠.
+- state
+  - 우선 상태는 .changed, .ended, .cancelled, .began, .possible 등등 있는데 우선 제가 쓴 .ended와 .changed 만 살펴볼게요.
+  - .changed : 계속 변할 때의 동작을 의미해요. 저는 변할 때 손가락이 누르는 포인트만큼 뷰가 내려가도록 했습니다. CGRect의 y값으로 뷰의 상단이 보여지는 높이를 정할 수 있어요.
+  - .ended : 패닝이 끝났을 때, 즉, 손가락을 뗐을 때의 동작을 의미해요. 저는 동작이 끝나면 위에서 정의한 interval이 view의 높이의 반을 넘었을 때, 즉, 손가락이 화면의 절반 밑으로 내려왔을 때 뷰가 dismiss 되도록 했어요.
 
 ------
 

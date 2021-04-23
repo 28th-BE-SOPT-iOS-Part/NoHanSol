@@ -12,14 +12,14 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-  //MARK: - LifeCycles
+  // MARK: - LifeCycles
   override func viewDidLoad() {
     super.viewDidLoad()
     layout()
     self.navigationController?.navigationBar.isHidden = true
   }
   
-  //MARK: - Properties
+  // MARK: - Properties
   let titleLabel = UILabel().then {
     $0.textColor = .black
     $0.text = "카카오톡을 시작합니다"
@@ -70,7 +70,7 @@ class SignUpViewController: UIViewController {
   }
   
   
-  //MARK : - Helpers
+  // MARK: - Helpers
   func layout() {
     self.view.add(self.titleLabel) {
       $0.snp.makeConstraints {
@@ -115,6 +115,7 @@ class SignUpViewController: UIViewController {
       }
     }
   }
+  
   @objc func touchUpLogin() {
     // 1. 텍스트필드 모두 텍스트가 입력되었을 떄
     if self.emailTextField.hasText &&

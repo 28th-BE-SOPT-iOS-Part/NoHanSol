@@ -12,14 +12,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
   
-  //MARK: - LifeCycles
+  // MARK: - LifeCycles
   override func viewDidLoad() {
     super.viewDidLoad()
     layout()
     self.navigationController?.navigationBar.isHidden = true
   }
   
-  //MARK: - Properties
+  // MARK: - Properties
   let titleLabel = UILabel().then {
     $0.textColor = .black
     $0.text = "카카오톡을 시작합니다"
@@ -73,7 +73,7 @@ class LoginViewController: UIViewController {
   }
   
   
-  //MARK : - Helpers
+  // MARK: - Helpers
   func layout() {
     self.view.add(self.titleLabel) {
       $0.snp.makeConstraints {

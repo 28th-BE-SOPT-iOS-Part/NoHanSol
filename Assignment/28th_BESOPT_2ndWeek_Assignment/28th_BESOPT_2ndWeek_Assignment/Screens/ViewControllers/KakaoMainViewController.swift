@@ -11,11 +11,13 @@ import UIKit
 
 class KakaoMainViewController: UIViewController {
   
+  // MARK: - LifeCycles
   override func viewDidLoad() {
     super.viewDidLoad()
     layout()
   }
   
+  // MARK: - Properties
   let friendLabel = UILabel().then {
     $0.text = "친구"
     $0.textColor = .black
@@ -27,6 +29,7 @@ class KakaoMainViewController: UIViewController {
     $0.addTarget(self, action: #selector(popUpProfile), for: .touchUpInside)
   }
   
+  // MARK: - Helpers
   func layout() {
     self.view.add(self.friendLabel) {
       $0.snp.makeConstraints {
@@ -50,7 +53,7 @@ class KakaoMainViewController: UIViewController {
   
   @objc func popUpProfile() {
     guard let profileVC = self.storyboard?.instantiateViewController(identifier: "KakaoProfileViewController") as? KakaoProfileViewController else { return }
-    profileVC.modalPresentationStyle = .fullScreen
+    profileVC.modalPresentationStyle = .overFullScreen
     self.present(profileVC, animated: true, completion: nil)
   }
 }
