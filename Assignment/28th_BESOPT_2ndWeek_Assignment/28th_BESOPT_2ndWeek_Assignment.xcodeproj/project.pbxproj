@@ -19,6 +19,10 @@
 		CC329502262586CC005F706D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC329501262586CC005F706D /* SnapKit */; };
 		CC329506262586EA005F706D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = CC329505262586EA005F706D /* Then */; };
 		CC32950A262586FB005F706D /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CC329509262586FB005F706D /* TextFieldEffects */; };
+		CC80105B2635403C0020B517 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80105A2635403C0020B517 /* FriendTableViewCell.swift */; };
+		CC80105F263543650020B517 /* FriendListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80105E263543650020B517 /* FriendListModel.swift */; };
+		CC801062263548100020B517 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC801061263548100020B517 /* UITableViewCell+.swift */; };
+		CC801066263548830020B517 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC801065263548830020B517 /* ReusableView.swift */; };
 		CCF8B0A226258A9000F65BE0 /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */; };
 		CCF8B0A526258A9B00F65BE0 /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */; };
 		CCF8B0A826258AA100F65BE0 /* FourthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */; };
@@ -40,6 +44,10 @@
 		CC3294EE262585F0005F706D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC3294F426258604005F706D /* KakaoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMainViewController.swift; sourceTree = "<group>"; };
 		CC3294F82625866B005F706D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CC80105A2635403C0020B517 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		CC80105E263543650020B517 /* FriendListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListModel.swift; sourceTree = "<group>"; };
+		CC801061263548100020B517 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		CC801065263548830020B517 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
 		CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
 		CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthTab.storyboard; sourceTree = "<group>"; };
@@ -63,6 +71,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC0E803B26353E3F00461710 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E803F26353E5A00461710 /* Storyboards */,
+				CC0E803E26353E5200461710 /* ViewControllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CC0E803C26353E4600461710 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E804126353E7600461710 /* Storyboards */,
+				CC0E804026353E6D00461710 /* ViewControllers */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CC0E803D26353E4B00461710 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CC0E804426353EA900461710 /* Cells */,
+				CC0E804326353EA400461710 /* Storyboards */,
+				CC0E804226353E9E00461710 /* ViewControllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CC0E803E26353E5200461710 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC3294EE262585F0005F706D /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC0E803F26353E5A00461710 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CC3294E5262585AD005F706D /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC0E804026353E6D00461710 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC3294F82625866B005F706D /* SignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC0E804126353E7600461710 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC0E804226353E9E00461710 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC3294F426258604005F706D /* KakaoMainViewController.swift */,
+				CCF8B0BA26258AE700F65BE0 /* EmptyTabViewController.swift */,
+				CCF8B0C126258E5000F65BE0 /* TabBarViewController.swift */,
+				CCF8B0C82625908200F65BE0 /* KakaoProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC0E804326353EA400461710 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */,
+				CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */,
+				CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */,
+				CCF8B0AA26258AA900F65BE0 /* FifthTab.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC0E804426353EA900461710 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CC80105A2635403C0020B517 /* FriendTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CC3294B826258495005F706D = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +188,8 @@
 		CC3294D92625851F005F706D /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				CC801064263548700020B517 /* Protocols */,
+				CC80105D263543570020B517 /* Models */,
 				CC3294DF26258548005F706D /* Supports */,
 				CC3294DA26258525005F706D /* Extensions */,
 			);
@@ -101,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				CC3294DB26258533005F706D /* UIView+.swift */,
+				CC801061263548100020B517 /* UITableViewCell+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,6 +219,10 @@
 		CC3294E026258568005F706D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CC3294CF26258498005F706D /* LaunchScreen.storyboard */,
+				CC0E803D26353E4B00461710 /* Home */,
+				CC0E803C26353E4600461710 /* SignUp */,
+				CC0E803B26353E3F00461710 /* Login */,
 				CC3294E226258579005F706D /* ViewControllers */,
 				CC3294E126258574005F706D /* Storyboards */,
 			);
@@ -128,12 +232,6 @@
 		CC3294E126258574005F706D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				CC3294CF26258498005F706D /* LaunchScreen.storyboard */,
-				CC3294E5262585AD005F706D /* Login.storyboard */,
-				CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */,
-				CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */,
-				CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */,
-				CCF8B0AA26258AA900F65BE0 /* FifthTab.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -141,14 +239,24 @@
 		CC3294E226258579005F706D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CC3294EE262585F0005F706D /* LoginViewController.swift */,
-				CC3294F82625866B005F706D /* SignUpViewController.swift */,
-				CC3294F426258604005F706D /* KakaoMainViewController.swift */,
-				CCF8B0BA26258AE700F65BE0 /* EmptyTabViewController.swift */,
-				CCF8B0C126258E5000F65BE0 /* TabBarViewController.swift */,
-				CCF8B0C82625908200F65BE0 /* KakaoProfileViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC80105D263543570020B517 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC80105E263543650020B517 /* FriendListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC801064263548700020B517 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC801065263548830020B517 /* ReusableView.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +346,14 @@
 				CCF8B0C92625908200F65BE0 /* KakaoProfileViewController.swift in Sources */,
 				CCF8B0C226258E5000F65BE0 /* TabBarViewController.swift in Sources */,
 				CC3294F92625866B005F706D /* SignUpViewController.swift in Sources */,
+				CC80105F263543650020B517 /* FriendListModel.swift in Sources */,
 				CC3294EF262585F0005F706D /* LoginViewController.swift in Sources */,
 				CCF8B0BB26258AE700F65BE0 /* EmptyTabViewController.swift in Sources */,
 				CC3294DC26258533005F706D /* UIView+.swift in Sources */,
+				CC801066263548830020B517 /* ReusableView.swift in Sources */,
 				CC3294C526258496005F706D /* AppDelegate.swift in Sources */,
+				CC80105B2635403C0020B517 /* FriendTableViewCell.swift in Sources */,
+				CC801062263548100020B517 /* UITableViewCell+.swift in Sources */,
 				CC3294C726258496005F706D /* SceneDelegate.swift in Sources */,
 				CC3294F526258604005F706D /* KakaoMainViewController.swift in Sources */,
 			);

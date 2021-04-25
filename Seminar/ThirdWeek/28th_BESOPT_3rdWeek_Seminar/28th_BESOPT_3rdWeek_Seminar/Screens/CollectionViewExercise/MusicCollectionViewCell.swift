@@ -8,7 +8,7 @@
 import UIKit
 
 class MusicCollectionViewCell: UICollectionViewCell {
-    
+  
   @IBOutlet weak var musicImageView: UIImageView!
   @IBOutlet weak var musicTitleLabel: UILabel!
   @IBOutlet weak var musicSingerLabel: UILabel!

@@ -32,7 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     viewControllers.append(contentsOf: [firstVC, tableVC, collectionVC])
     
-    window.rootViewController = viewControllers[1]
+    window.rootViewController = viewControllers[2]
     window.makeKeyAndVisible()
     self.window = window
   }
