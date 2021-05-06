@@ -26,6 +26,9 @@ class KakaoMainViewController: UIViewController {
   
   // MARK: - Properties
   var friendList: [FriendListModel] = []
+  let titleView = UIView().then {
+    $0.backgroundColor = .clear
+  }
   let friendLabel = UILabel().then {
     $0.text = "친구"
     $0.textColor = .textBlack
@@ -52,7 +55,7 @@ class KakaoMainViewController: UIViewController {
     $0.font = UIFont.systemFont(ofSize: 11, weight: .regular)
     $0.textColor = UIColor(cgColor: CGColor(red: 166/255, green: 166/255, blue: 166/255, alpha: 1))
   }
-  let seperatorView = UIView().then {
+  let separatorView = UIView().then {
     $0.backgroundColor = UIColor(cgColor:
                                   CGColor(red: 247/255, green: 247/255, blue: 247/255, alpha: 1))
   }
@@ -61,16 +64,23 @@ class KakaoMainViewController: UIViewController {
   }
   // MARK: - Helpers
   func layout() {
-    self.view.add(self.friendLabel) {
+    self.view.add(self.titleView) {
       $0.snp.makeConstraints {
-        $0.top.equalTo(self.view.snp.top).offset(59)
-        $0.leading.equalTo(self.view.snp.leading).offset(14)
+        $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+        $0.leading.equalTo(self.view.snp.leading)
+        $0.trailing.equalTo(self.view.snp.leading)
+      }
+    }
+    self.titleView.add(self.friendLabel) {
+      $0.snp.makeConstraints {
+        $0.top.equalTo(self.titleView.snp.top).offset(15)
+        $0.leading.equalTo(self.titleView.snp.leading).offset(14)
       }
     }
     self.view.add(self.settingButton) {
       $0.snp.makeConstraints {
         $0.top.equalTo(self.friendLabel.snp.top)
-        $0.trailing.equalTo(self.view.snp.trailing).offset(-15)
+        $0.trailing.equalTo(self.titleView.snp.trailing).offset(-15)
         $0.width.height.equalTo(self.friendLabel.snp.height)
       }
     }
@@ -106,7 +116,7 @@ class KakaoMainViewController: UIViewController {
         $0.leading.equalTo(self.profileNameLabel.snp.leading)
       }
     }
-    self.view.add(self.seperatorView) {
+    self.view.add(self.separatorView) {
       $0.snp.makeConstraints {
         $0.bottom.equalTo(self.profileContainerView.snp.bottom)
         $0.width.equalTo(self.view.snp.width)
@@ -177,7 +187,7 @@ class KakaoMainViewController: UIViewController {
 
 extension KakaoMainViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 50
+    return self.view.frame.height*50/812
   }
 }
 extension KakaoMainViewController: UITableViewDataSource {
