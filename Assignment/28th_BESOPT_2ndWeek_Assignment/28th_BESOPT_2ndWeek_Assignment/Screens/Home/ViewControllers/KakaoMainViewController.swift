@@ -26,7 +26,7 @@ class KakaoMainViewController: UIViewController {
   
   // MARK: - Properties
   var friendList: [FriendListModel] = []
-  let titleView = UIView().then {
+  let titleContainerView = UIView().then {
     $0.backgroundColor = .clear
   }
   let friendLabel = UILabel().then {
@@ -64,23 +64,24 @@ class KakaoMainViewController: UIViewController {
   }
   // MARK: - Helpers
   func layout() {
-    self.view.add(self.titleView) {
+    self.view.add(self.titleContainerView) {
       $0.snp.makeConstraints {
         $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
         $0.leading.equalTo(self.view.snp.leading)
-        $0.trailing.equalTo(self.view.snp.leading)
+        $0.trailing.equalTo(self.view.snp.trailing)
+        $0.height.equalTo(self.view.frame.height*52/812)
       }
     }
-    self.titleView.add(self.friendLabel) {
+    self.titleContainerView.add(self.friendLabel) {
       $0.snp.makeConstraints {
-        $0.top.equalTo(self.titleView.snp.top).offset(15)
-        $0.leading.equalTo(self.titleView.snp.leading).offset(14)
+        $0.top.equalTo(self.titleContainerView.snp.top).offset(15)
+        $0.leading.equalTo(self.titleContainerView.snp.leading).offset(14)
       }
     }
-    self.view.add(self.settingButton) {
+    self.titleContainerView.add(self.settingButton) {
       $0.snp.makeConstraints {
         $0.top.equalTo(self.friendLabel.snp.top)
-        $0.trailing.equalTo(self.titleView.snp.trailing).offset(-15)
+        $0.trailing.equalTo(self.titleContainerView.snp.trailing).offset(-15)
         $0.width.height.equalTo(self.friendLabel.snp.height)
       }
     }
