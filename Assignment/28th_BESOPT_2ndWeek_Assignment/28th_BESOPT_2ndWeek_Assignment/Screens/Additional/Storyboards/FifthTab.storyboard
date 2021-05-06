@@ -8,17 +8,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Empty Tab View Controller-->
+        <!--Additional View Controller-->
         <scene sceneID="ZVG-SN-FtW">
             <objects>
-                <viewController id="Ly9-a5-MBl" customClass="EmptyTabViewController" customModule="_8th_BESOPT_2ndWeek_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdditionalViewController" id="Ly9-a5-MBl" customClass="AdditionalViewController" customModule="_8th_BESOPT_2ndWeek_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eW3-pg-mov">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="CNm-gA-NrC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="note" catalog="system" id="Nmn-75-YVP"/>
+                    <tabBarItem key="tabBarItem" title="" image="detailTabIcon" selectedImage="detailTabIconSelected" id="Nmn-75-YVP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xom-da-b8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -27,7 +27,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="note" catalog="system" width="128" height="106"/>
+        <image name="detailTabIcon" width="21" height="5"/>
+        <image name="detailTabIconSelected" width="21" height="5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,8 +9,6 @@ import UIKit
 
 class FriendTableViewCell: UITableViewCell {
   
-  let identifier = "FriendTableViewCell"
-  
   let friendImageContainerView = UIView()
   let friendImageView = UIImageView()
   let friendNameLabel = UILabel().then {
@@ -21,16 +19,13 @@ class FriendTableViewCell: UITableViewCell {
     $0.textColor = UIColor(cgColor: CGColor(red: 166/255, green: 166/255, blue: 166/255, alpha: 1))
     $0.font = UIFont.systemFont(ofSize: 11, weight: .regular)
   }
+  weak var viewController: UIViewController?
   
   override func awakeFromNib() {
     super.awakeFromNib()
     layout()
   }
   
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-    
-  }
   
   func layout() {
     self.contentView.add(friendImageContainerView) {

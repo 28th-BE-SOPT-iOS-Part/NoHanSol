@@ -28,8 +28,13 @@ class KakaoMainViewController: UIViewController {
   var friendList: [FriendListModel] = []
   let friendLabel = UILabel().then {
     $0.text = "친구"
-    $0.textColor = .black
+    $0.textColor = .textBlack
     $0.font = UIFont.systemFont(ofSize: 22, weight: .bold)
+  }
+  let settingButton = UIButton().then {
+    $0.setBackgroundImage(UIImage(named: "settingIcon"), for: .normal)
+    $0.isUserInteractionEnabled = true
+    $0.addTarget(self, action: #selector(popUpMenuAction), for: .touchUpInside)
   }
   let profileContainerView = UIView()
   let profileImageContainerView = UIView()
@@ -60,6 +65,13 @@ class KakaoMainViewController: UIViewController {
       $0.snp.makeConstraints {
         $0.top.equalTo(self.view.snp.top).offset(59)
         $0.leading.equalTo(self.view.snp.leading).offset(14)
+      }
+    }
+    self.view.add(self.settingButton) {
+      $0.snp.makeConstraints {
+        $0.top.equalTo(self.friendLabel.snp.top)
+        $0.trailing.equalTo(self.view.snp.trailing).offset(-15)
+        $0.width.height.equalTo(self.friendLabel.snp.height)
       }
     }
     self.view.add(self.profileContainerView) {
@@ -119,22 +131,47 @@ class KakaoMainViewController: UIViewController {
   
   func putInFriendList() {
     self.friendList.append(contentsOf:
-                            [FriendListModel(friendImageName: "profileImage1", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage2", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage3", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage4", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage5", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage6", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage7", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage8", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage9", friendName: "안솝트", friendMessage: "배고파요"),
-                             FriendListModel(friendImageName: "profileImage10", friendName: "안솝트", friendMessage: "배고파요")])
+                            [FriendListModel(friendImageName: "profileImage1", friendName: "안솝트", friendMessage: "신전떡볶이"),
+                             FriendListModel(friendImageName: "profileImage2", friendName: "강솝트", friendMessage: "엽기떡볶이"),
+                             FriendListModel(friendImageName: "profileImage3", friendName: "나솝트", friendMessage: "배떡"),
+                             FriendListModel(friendImageName: "profileImage4", friendName: "노솝트", friendMessage: "응급실떡볶이"),
+                             FriendListModel(friendImageName: "profileImage5", friendName: "동솝트", friendMessage: "걸작떡볶이&치킨"),
+                             FriendListModel(friendImageName: "profileImage6", friendName: "단솝트", friendMessage: "크레이지떡볶이"),
+                             FriendListModel(friendImageName: "profileImage7", friendName: "류솝트", friendMessage: "정원분식"),
+                             FriendListModel(friendImageName: "profileImage8", friendName: "이솝트", friendMessage: "죠스떡볶이"),
+                             FriendListModel(friendImageName: "profileImage9", friendName: "최솝트", friendMessage: "시장떡볶이"),
+                             FriendListModel(friendImageName: "profileImage10", friendName: "박솝트", friendMessage: "떡군이네떡볶이"),
+                             FriendListModel(friendImageName: "profileImage10", friendName: "우솝트", friendMessage: "청년다방"),
+                             FriendListModel(friendImageName: "profileImage10", friendName: "유솝트", friendMessage: "미미네떡볶이"),
+                             FriendListModel(friendImageName: "profileImage10", friendName: "백솝트", friendMessage: "홍대마늘떡볶이"),
+                             FriendListModel(friendImageName: "profileImage10", friendName: "고솝트", friendMessage: "또보겠지떡볶이")])
+  }
+  
+  func setupContextMenu() -> UIMenu {
+    let chatAction = UIAction(title: "채팅하기") {action in}
+    let voicetAction = UIAction(title: "보이스톡") {action in}
+    let faceAction = UIAction(title: "페이스톡") {action in}
+    let presentAction = UIAction(title: "선물하기") {action in}
+    return UIMenu(children: [chatAction, voicetAction, faceAction, presentAction])
   }
   
   @objc func popUpProfile() {
     guard let profileVC = self.storyboard?.instantiateViewController(identifier: "KakaoProfileViewController") as? KakaoProfileViewController else { return }
     profileVC.modalPresentationStyle = .overFullScreen
     self.present(profileVC, animated: true, completion: nil)
+  }
+  
+  @objc func popUpMenuAction(_ sender: UIButton) {
+    let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+    let editAction = UIAlertAction(title: "편집", style: .default, handler: nil)
+    let manageAction = UIAlertAction(title: "친구 관리", style: .default, handler: nil)
+    let settingAction = UIAlertAction(title: "전체 설정", style: .default, handler: nil)
+    let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+    alertController.addAction(editAction)
+    alertController.addAction(manageAction)
+    alertController.addAction(settingAction)
+    alertController.addAction(cancelAction)
+    self.present(alertController, animated: true, completion: nil)
   }
 }
 
@@ -153,9 +190,40 @@ extension KakaoMainViewController: UITableViewDataSource {
       return UITableViewCell()
     }
     friendCell.awakeFromNib()
+    friendCell.selectionStyle = .none
     friendCell.setData(friendImageName: self.friendList[indexPath.row].friendImageName, friendName: self.friendList[indexPath.row].friendName, friendMessage: self.friendList[indexPath.row].friendMessage)
     return friendCell
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let profileViewController = KakaoProfileViewController()
+    profileViewController.modalPresentationStyle = .overFullScreen
+    profileViewController.profileImageView.image = UIImage(named: self.friendList[indexPath.row].friendImageName)
+    profileViewController.nameLabel.text = self.friendList[indexPath.row].friendName
+    self.present(profileViewController, animated: true, completion: nil)
+  }
   
+  func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+    let blockAction = UIContextualAction(style: .destructive, title: "차단", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+    })
+    blockAction.backgroundColor = .red
+    let hideAction = UIContextualAction(style: .normal, title: "숨김", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+    })
+    hideAction.backgroundColor = .steel
+    return UISwipeActionsConfiguration(actions:[blockAction,hideAction])
+  }
+  
+  func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+    return UIContextMenuConfiguration(identifier: nil,
+                                      previewProvider: { () -> UIViewController? in
+                                        let profileViewController = KakaoProfileViewController()
+                                        profileViewController.profileImageView.image = UIImage(named: self.friendList[indexPath.row].friendImageName)
+                                        profileViewController.nameLabel.text = self.friendList[indexPath.row].friendName
+                                        return profileViewController
+                                        },
+                                      actionProvider: { suggestedActions in
+                                        return self.setupContextMenu()
+                                      })
+    
+  }
 }

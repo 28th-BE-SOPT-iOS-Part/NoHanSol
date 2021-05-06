@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="Akt-KH-l3E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="trash" catalog="system" id="AdG-QL-TTE"/>
+                    <tabBarItem key="tabBarItem" title="" image="searchTabIcon" selectedImage="searchTabIconSelected" id="AdG-QL-TTE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWo-5i-gAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -27,7 +27,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="trash" catalog="system" width="121" height="128"/>
+        <image name="searchTabIcon" width="15" height="17.5"/>
+        <image name="searchTabIconSelected" width="15" height="17.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

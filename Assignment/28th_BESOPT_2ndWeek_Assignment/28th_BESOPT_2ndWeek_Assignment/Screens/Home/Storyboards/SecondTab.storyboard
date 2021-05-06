@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="0jC-b8-ye3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="pencil.circle" catalog="system" id="HOK-M9-Gxl"/>
+                    <tabBarItem key="tabBarItem" title="" image="messageTabIcon" selectedImage="messageTabIconSelected" id="HOK-M9-Gxl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1g-HQ-PXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -27,7 +27,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="messageTabIcon" width="20.5" height="19.5"/>
+        <image name="messageTabIconSelected" width="20.5" height="19.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
