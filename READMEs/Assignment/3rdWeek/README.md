@@ -1,6 +1,6 @@
 # 3주차 세미나 과제
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__1.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wsi3xooj31hc0u0jwq.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wsi3xooj31hc0u0jwq.jpg)
 
 ---
 
@@ -10,9 +10,9 @@
 
 ## 과제 1 - TableView를 활용하여 친구목록 만들기
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__3.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wspbk2uj31hc0u0wsp.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wspbk2uj31hc0u0wsp.jpg)
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8wstdevlj30u01szwv3.jpg" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/Simulator_Screen_Shot_-_iPhone_11_Pro_-_2021-05-06_at_18.23.43.png" style="zoom: 25%;" /><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8wtrvfj5g309i0j47wh.gif" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_18-26-06.gif" style="zoom:80%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8wstdevlj30u01szwv3.jpg" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/Simulator_Screen_Shot_-_iPhone_11_Pro_-_2021-05-06_at_18.23.43.png" width="300" height="550"/><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8wtrvfj5g309i0j47wh.gif" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_18-26-06.gif" width="300" height="550" />
 
 ### 설명
 
@@ -20,9 +20,9 @@
 - 크게 분류하면 최상단 titleView, 그 아래 MyProfile(profileContainerView), 그 아래 separatorView, 마지막으로 friendTableView로 나누었고, 각 영역 아래에 뷰들이 존재하는 구조에요.
 - friendTableView는 아래 코드를 보면서 얘기해보져!!
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__6.42.19.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wu9ac1dj30yw0cctct.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wu9ac1dj30yw0cctct.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__6.42.33.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wubaz4oj31340u0ndu.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wubaz4oj31340u0ndu.jpg)
 
     - viewDidLoad 에는
         1. layout() - 모든 view의 layout 구현
@@ -37,7 +37,7 @@
     을 설정함으로써 Cell에 요소들의 레이아웃에 따라 Cell 높이가 결정됩니다.
     - 카카오톡에 tableView 구분선이 없기 때문에 separatorStyle 을 .none으로 주었어요.
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__6.41.54.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wuhcqjdj31bc0rwao3.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wuhcqjdj31bc0rwao3.jpg)
 
 - tableView Delegate와 DataSource 구요 세미나때 배운 내용과 크게 다른점은 없습니다!
 
@@ -45,13 +45,13 @@
 
 ## 과제2 - 셀 클릭 시, 각 셀의 프로필 ViewController로 present
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__5.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wukzgsmj31hc0u07cf.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wukzgsmj31hc0u07cf.jpg)
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8wuneuimg309i0j4kiv.gif" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_18-53-51.gif" style="zoom: 50%;" />
 
 - 위 과제는 didSelectRowAt 함수를 사용해서 구현했어요.
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__6.55.23.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wv0a078j31b607kn1n.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wv0a078j31b607kn1n.jpg)
 
 - 물론 Cell 내에서 setSelected()로 구현을 할 수도 있지만 어차피 ViewController에서 cell의 데이터를 넣기 때문에 여기서 하는게 뭔가 좀 더 편하더라구요,,,
 - modalPresentationStyle 을 그냥 .fullScreen으로 두면 패닝해서 내려갈 때 뒷 배경이 까만 배경으로 나와여!!
@@ -61,24 +61,24 @@
 
 ## 과제3 - CollectionView로 더보기 탭 구현
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__6.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvaeuzcj31hc0u0jyy.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvaeuzcj31hc0u0jyy.jpg)
 
-<img src="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/Simulator_Screen_Shot_-_iPhone_11_Pro_-_2021-05-06_at_18.58.36.png" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/Simulator_Screen_Shot_-_iPhone_11_Pro_-_2021-05-06_at_18.58.36.png" style="zoom:25%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8xhuj2e5j30u01szjyt.jpg" alt="Simulator Screen Shot - iPhone 11 Pro - 2021-05-06 at 18.58.36" width="300" height="550" />
 
 - 3번째 과제는 collectionView를 사용해서 더보기 탭을 구현하는 건데요, 아까 홈탭을 구현했을 때와 마찬가지로 위 사진처럼 큰 뷰를 나눴어요!
 - 저는 이렇게 큰 뷰들을 나누고 네이밍할 때 보통 ContainerView라는 이름을 붙이는데요, 먼저 큰 뷰들을 나눠놓고 안에 하위 뷰들을 구현하면 좀 더 체계적(?)으로 헷갈리지 않으면서 구현할 수 있는 장점이 있는 것 같아요!
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.05.01.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvot87dj30sk0ag76u.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvot87dj30sk0ag76u.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.04.46.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvt2pg6j313c0sen7a.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvt2pg6j313c0sen7a.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.05.20.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvwf6iyj316j0u04d0.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvwf6iyj316j0u04d0.jpg)
 
 - 전체적인 코드의 구성은 다음과 같아요!
 - 이번 탭에서는 함수들을 모두 extension에서 선언했어요,,, 딱히 뭐 이유가 있다라기 보다는 좀 더 깔끔한 너낌,,,?
 - 그리고 collectionView를 코드로 짤 때, register도 물론 해야 하지만 한 가지 더 고려해주어야 하는 게 있어요.
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.07.23.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww00kr4j310s07o0v4.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww00kr4j310s07o0v4.jpg)
 
 - 위와 같이 layout과 크기를 먼저 잡아주지 않으면 런타임 에러가 발생합니다,,,!!
 - 이번 과제에서는 scroll이 필요하지 않기 때문에 scroll을 꺼주었어요! ( 근데 scrollDirection은 왜 설정했을까요,,,? 크흠;;)
@@ -86,19 +86,19 @@
 한 줄과 줄 사이의 거리(minimumLineSpacing)는 3으로 주었고
 셀 내부 코드는 아래와 같습니다!
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.10.48.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww2ejrij30t010agvi.jpg)
+   ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww2ejrij30t010agvi.jpg)
 
   ---
 
-    ## 도전과제 1 - AlertController - ActionSheet
+   ## 도전과제 1 - AlertController - ActionSheet
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__8.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww5a6r5j31hc0u011t.jpg)
+   ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww5a6r5j31hc0u011t.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-20-02.gif](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww8pgq3g309i0j41kx.gif)
+   ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww8pgq3g309i0j41kx.gif)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.40.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.40.png)
+   ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8xemkwsoj318i06ujvd.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.49.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.49.png)
+   ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8xews6e2j30v004m0ui.jpg)
 
 - actionSheet 스타일의 UIAlertController를 만들고 그 안에 UIAlertAction을 추가하는 방식이에요.
 - style에는 .actionSheet와 .alert가 있는데
@@ -112,11 +112,11 @@
 
 ## 도전과제 2 - tableViewSwipeAction
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__9.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__9.png)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8xdr31j6j31hc0u0tge.jpg)
 
-<img src="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-30-52.gif" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-30-52.gif" style="zoom:67%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwf61taj31b60beaf4.jpg" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-30-52.gif" style="zoom:67%;" />
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.31.56.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwf61taj31b60beaf4.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwf61taj31b60beaf4.jpg)
 
 - 이번 과제때문에 저도 처음 써봤는데요 나중에 프로젝트나 앱잼할 때 굉장히 유용하게 사용할 것 같은 tableViewSwipeAction 입니다!
 - tableView 내에 함수가 구현되어있구요 두 가지의 함수가 있어요!
@@ -138,13 +138,13 @@
 
 ## 도전과제 3 - Contextual Menu
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__10.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwibtz8j31hc0u0qc3.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwibtz8j31hc0u0qc3.jpg)
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwlp4eag309i0j47wh.gif" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-41-24.gif" style="zoom:67%;" />
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.42.10.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwr886fj319i0doafl.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwr886fj319i0doafl.jpg)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.42.21.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwuxgpij30vm072tb0.jpg)
+![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwuxgpij30vm072tb0.jpg)
 
 - 이것도 이번 과제 덕분에 처음 써보게 되었어요,,,^^7
 - tableView 내에 contextMenuConfigurationForRowAt 함수를 사용해서 tableView 셀을 꾹 클릭하고 있으면 UIContextMenuConfiguration이 호출되는 방식입니다.
