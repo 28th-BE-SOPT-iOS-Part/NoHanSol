@@ -11,7 +11,7 @@
 | --------------------------------------------------- | ------ | ------------------------------------------------------------ |
 | 1주차 - iOS 기초, H.I.G, 화면전환                   | link   | [link](./READMEs/Assignment/1stWeek/README.md) |
 | 2주차 - Autolayout, ScrollView                      | link   | [link](./READMEs/Assignment/2ndWeek/README.md) |
-| 3주차 - TableView, CollectionView, 데이터 전달 방식 | link   | [link](./READMEs/Assignment/2ndWeek/README.md)                                                         |
+| 3주차 - TableView, CollectionView, 데이터 전달 방식 | link   | [link](./READMEs/Assignment/3rdWeek/README.md)                                                         |
 | 4주차 - CocoaPods, Networking                       | link   | link                                                         |
 | 5주차 - 디자인 합동 세미나                          | link   | link                                                         |
 | 6주차 - 서버 합동 세미나                            | link   | link                                                         |
