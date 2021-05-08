@@ -63,30 +63,35 @@
 
 ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__6.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvaeuzcj31hc0u0jyy.jpg)
 
-<img src="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/Simulator_Screen_Shot_-_iPhone_11_Pro_-_2021-05-06_at_18.58.36.png" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/Simulator_Screen_Shot_-_iPhone_11_Pro_-_2021-05-06_at_18.58.36.png" style="zoom:25%;" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gq8xhuj2e5j30u01szjyt.jpg" alt="Simulator Screen Shot - iPhone 11 Pro - 2021-05-06 at 18.58.36" style="zoom:33%;" />
 
 - 3번째 과제는 collectionView를 사용해서 더보기 탭을 구현하는 건데요, 아까 홈탭을 구현했을 때와 마찬가지로 위 사진처럼 큰 뷰를 나눴어요!
+
 - 저는 이렇게 큰 뷰들을 나누고 네이밍할 때 보통 ContainerView라는 이름을 붙이는데요, 먼저 큰 뷰들을 나눠놓고 안에 하위 뷰들을 구현하면 좀 더 체계적(?)으로 헷갈리지 않으면서 구현할 수 있는 장점이 있는 것 같아요!
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.05.01.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvot87dj30sk0ag76u.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvot87dj30sk0ag76u.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.04.46.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvt2pg6j313c0sen7a.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvt2pg6j313c0sen7a.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.05.20.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvwf6iyj316j0u04d0.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wvwf6iyj316j0u04d0.jpg)
 
 - 전체적인 코드의 구성은 다음과 같아요!
+
 - 이번 탭에서는 함수들을 모두 extension에서 선언했어요,,, 딱히 뭐 이유가 있다라기 보다는 좀 더 깔끔한 너낌,,,?
+
 - 그리고 collectionView를 코드로 짤 때, register도 물론 해야 하지만 한 가지 더 고려해주어야 하는 게 있어요.
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.07.23.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww00kr4j310s07o0v4.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww00kr4j310s07o0v4.jpg)
 
 - 위와 같이 layout과 크기를 먼저 잡아주지 않으면 런타임 에러가 발생합니다,,,!!
+
 - 이번 과제에서는 scroll이 필요하지 않기 때문에 scroll을 꺼주었어요! ( 근데 scrollDirection은 왜 설정했을까요,,,? 크흠;;)
+
 - 셀과 셀 사이의 거리(minimumInterItemSpacing)는 19, 
 한 줄과 줄 사이의 거리(minimumLineSpacing)는 3으로 주었고
 셀 내부 코드는 아래와 같습니다!
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.10.48.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww2ejrij30t010agvi.jpg)
+    ![](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww2ejrij30t010agvi.jpg)
 
   ---
 
@@ -96,25 +101,27 @@
 
     ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-20-02.gif](https://tva1.sinaimg.cn/large/008i3skNgy1gq8ww8pgq3g309i0j41kx.gif)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.40.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.40.png)
+    ![스크린샷 2021-05-06 오후 8.21.30](https://tva1.sinaimg.cn/large/008i3skNgy1gq8xemkwsoj318i06ujvd.jpg)
 
-    ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.49.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.21.49.png)
+  ![스크린샷 2021-05-06 오후 8.21.47](https://tva1.sinaimg.cn/large/008i3skNgy1gq8xews6e2j30v004m0ui.jpg)
 
 - actionSheet 스타일의 UIAlertController를 만들고 그 안에 UIAlertAction을 추가하는 방식이에요.
+
 - style에는 .actionSheet와 .alert가 있는데
     1. .actionSheet 는 아래에서 올라오는 팝업 형태를 취하고
     2. .alert 는 뷰 중앙에 띄워지는 팝업 형태를 취해요
+    
 - 원래 UIAlertAction에 handler를 선언해서 눌렀을 때 어떤 Action을 수행하기 위해 쓰이지만 이번 과제에서 Action 추가는 없었으므로 handler에 nil 값을 주었어요!
+
 - 마지막에 꼭 선언한 UIAlertController로 present를 해주셔야 밑에 팝업이 나와요!
+
 - 버튼 클릭시 UIAlertController 가 나와야 하기 때문에 addTarget을 해주었고 selector를 사용하여 구현하였습니다.
 
 ---
 
 ## 도전과제 2 - tableViewSwipeAction
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__9.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/3__9.png)
-
-<img src="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-30-52.gif" alt="3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/May-06-2021_19-30-52.gif" style="zoom:67%;" />
+![3__9](https://tva1.sinaimg.cn/large/008i3skNgy1gq8xdr31j6j31hc0u0tge.jpg)
 
 ![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%89%E1%85%A6%E1%84%86%E1%85%B5%E1%84%82%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6%20d369f1c8aa814c27bf375527d52e850a/_2021-05-06__7.31.56.png](https://tva1.sinaimg.cn/large/008i3skNgy1gq8wwf61taj31b60beaf4.jpg)
 
