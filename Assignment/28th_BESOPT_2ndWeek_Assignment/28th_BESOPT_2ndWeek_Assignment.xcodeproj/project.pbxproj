@@ -17,9 +17,9 @@
 		CC3294EF262585F0005F706D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294EE262585F0005F706D /* LoginViewController.swift */; };
 		CC3294F526258604005F706D /* KakaoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294F426258604005F706D /* KakaoMainViewController.swift */; };
 		CC3294F92625866B005F706D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294F82625866B005F706D /* SignUpViewController.swift */; };
-		CC329502262586CC005F706D /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CC329501262586CC005F706D /* SwiftPackageProductDependency */; };
-		CC329506262586EA005F706D /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CC329505262586EA005F706D /* SwiftPackageProductDependency */; };
-		CC32950A262586FB005F706D /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CC329509262586FB005F706D /* SwiftPackageProductDependency */; };
+		CC329502262586CC005F706D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC329501262586CC005F706D /* SnapKit */; };
+		CC329506262586EA005F706D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = CC329505262586EA005F706D /* Then */; };
+		CC32950A262586FB005F706D /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CC329509262586FB005F706D /* TextFieldEffects */; };
 		CC80105B2635403C0020B517 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80105A2635403C0020B517 /* FriendTableViewCell.swift */; };
 		CC80105F263543650020B517 /* FriendListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80105E263543650020B517 /* FriendListModel.swift */; };
 		CC801062263548100020B517 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC801061263548100020B517 /* UITableViewCell+.swift */; };
@@ -27,6 +27,13 @@
 		CC978B0F2643BFAB002689A3 /* AdditionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC978B0E2643BFAB002689A3 /* AdditionalViewController.swift */; };
 		CC978B122643C5FE002689A3 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC978B112643C5FD002689A3 /* UIColor+.swift */; };
 		CC978B192643CA59002689A3 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC978B182643CA59002689A3 /* CategoryCollectionViewCell.swift */; };
+		CCF3590D264C1037008B7E51 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3590C264C1037008B7E51 /* APIConstants.swift */; };
+		CCF35910264C107D008B7E51 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3590F264C107D008B7E51 /* NetworkResult.swift */; };
+		CCF35913264C10E2008B7E51 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35912264C10E2008B7E51 /* LoginService.swift */; };
+		CCF35916264C110B008B7E51 /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35915264C110B008B7E51 /* SignupService.swift */; };
+		CCF35919264C1136008B7E51 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35918264C1136008B7E51 /* UIViewController+.swift */; };
+		CCF3591C264C1141008B7E51 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3591B264C1141008B7E51 /* LoginModel.swift */; };
+		CCF3591F264C1165008B7E51 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3591E264C1165008B7E51 /* SignupModel.swift */; };
 		CCF8B0A226258A9000F65BE0 /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */; };
 		CCF8B0A526258A9B00F65BE0 /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */; };
 		CCF8B0A826258AA100F65BE0 /* FourthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */; };
@@ -57,6 +64,13 @@
 		CC978B0E2643BFAB002689A3 /* AdditionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalViewController.swift; sourceTree = "<group>"; };
 		CC978B112643C5FD002689A3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		CC978B182643CA59002689A3 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCF3590C264C1037008B7E51 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		CCF3590F264C107D008B7E51 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		CCF35912264C10E2008B7E51 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		CCF35915264C110B008B7E51 /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
+		CCF35918264C1136008B7E51 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		CCF3591B264C1141008B7E51 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CCF3591E264C1165008B7E51 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
 		CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
 		CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthTab.storyboard; sourceTree = "<group>"; };
@@ -72,9 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC32950A262586FB005F706D /* BuildFile in Frameworks */,
-				CC329502262586CC005F706D /* BuildFile in Frameworks */,
-				CC329506262586EA005F706D /* BuildFile in Frameworks */,
+				CC32950A262586FB005F706D /* TextFieldEffects in Frameworks */,
+				CC329502262586CC005F706D /* SnapKit in Frameworks */,
+				CC329506262586EA005F706D /* Then in Frameworks */,
 				AB20358EA2477C6785EFCAFF /* Pods_28th_BESOPT_2ndWeek_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,7 +110,6 @@
 				9A731C948BEEE56E431D858E /* Pods-28th_BESOPT_2ndWeek_Assignment.debug.xcconfig */,
 				D5B4D0CC4FFD0964C312D75D /* Pods-28th_BESOPT_2ndWeek_Assignment.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -218,10 +231,13 @@
 		CC3294D92625851F005F706D /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				CCF3590B264C1021008B7E51 /* NetworkServices */,
 				CC801064263548700020B517 /* Protocols */,
 				CC80105D263543570020B517 /* Models */,
 				CC3294DF26258548005F706D /* Supports */,
 				CC3294DA26258525005F706D /* Extensions */,
+				CCF3590C264C1037008B7E51 /* APIConstants.swift */,
+				CCF3590F264C107D008B7E51 /* NetworkResult.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -232,6 +248,7 @@
 				CC3294DB26258533005F706D /* UIView+.swift */,
 				CC801061263548100020B517 /* UITableViewCell+.swift */,
 				CC978B112643C5FD002689A3 /* UIColor+.swift */,
+				CCF35918264C1136008B7E51 /* UIViewController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				CC80105E263543650020B517 /* FriendListModel.swift */,
+				CCF3591B264C1141008B7E51 /* LoginModel.swift */,
+				CCF3591E264C1165008B7E51 /* SignupModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,6 +328,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		CCF3590B264C1021008B7E51 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				CCF35912264C10E2008B7E51 /* LoginService.swift */,
+				CCF35915264C110B008B7E51 /* SignupService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,9 +356,9 @@
 			);
 			name = 28th_BESOPT_2ndWeek_Assignment;
 			packageProductDependencies = (
-				CC329501262586CC005F706D /* SwiftPackageProductDependency */,
-				CC329505262586EA005F706D /* SwiftPackageProductDependency */,
-				CC329509262586FB005F706D /* SwiftPackageProductDependency */,
+				CC329501262586CC005F706D /* SnapKit */,
+				CC329505262586EA005F706D /* Then */,
+				CC329509262586FB005F706D /* TextFieldEffects */,
 			);
 			productName = 28th_BESOPT_2ndWeek_Assignment;
 			productReference = CC3294C126258496005F706D /* 28th_BESOPT_2ndWeek_Assignment.app */;
@@ -360,9 +388,9 @@
 			);
 			mainGroup = CC3294B826258495005F706D;
 			packageReferences = (
-				CC329500262586CC005F706D /* RemoteSwiftPackageReference */,
-				CC329504262586EA005F706D /* RemoteSwiftPackageReference */,
-				CC329508262586FB005F706D /* RemoteSwiftPackageReference */,
+				CC329500262586CC005F706D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CC329504262586EA005F706D /* XCRemoteSwiftPackageReference "Then" */,
+				CC329508262586FB005F706D /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 			);
 			productRefGroup = CC3294C226258496005F706D /* Products */;
 			projectDirPath = "";
@@ -437,8 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF35913264C10E2008B7E51 /* LoginService.swift in Sources */,
 				CC978B192643CA59002689A3 /* CategoryCollectionViewCell.swift in Sources */,
 				CCF8B0C92625908200F65BE0 /* KakaoProfileViewController.swift in Sources */,
+				CCF3591C264C1141008B7E51 /* LoginModel.swift in Sources */,
+				CCF3590D264C1037008B7E51 /* APIConstants.swift in Sources */,
+				CCF35910264C107D008B7E51 /* NetworkResult.swift in Sources */,
 				CCF8B0C226258E5000F65BE0 /* TabBarViewController.swift in Sources */,
 				CC3294F92625866B005F706D /* SignUpViewController.swift in Sources */,
 				CC978B0F2643BFAB002689A3 /* AdditionalViewController.swift in Sources */,
@@ -447,10 +479,13 @@
 				CCF8B0BB26258AE700F65BE0 /* EmptyTabViewController.swift in Sources */,
 				CC3294DC26258533005F706D /* UIView+.swift in Sources */,
 				CC801066263548830020B517 /* ReusableView.swift in Sources */,
+				CCF35916264C110B008B7E51 /* SignupService.swift in Sources */,
+				CCF35919264C1136008B7E51 /* UIViewController+.swift in Sources */,
 				CC3294C526258496005F706D /* AppDelegate.swift in Sources */,
 				CC80105B2635403C0020B517 /* FriendTableViewCell.swift in Sources */,
 				CC801062263548100020B517 /* UITableViewCell+.swift in Sources */,
 				CC3294C726258496005F706D /* SceneDelegate.swift in Sources */,
+				CCF3591F264C1165008B7E51 /* SignupModel.swift in Sources */,
 				CC3294F526258604005F706D /* KakaoMainViewController.swift in Sources */,
 				CC978B122643C5FE002689A3 /* UIColor+.swift in Sources */,
 			);
@@ -652,7 +687,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CC329500262586CC005F706D /* RemoteSwiftPackageReference */ = {
+		CC329500262586CC005F706D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -660,7 +695,7 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		CC329504262586EA005F706D /* RemoteSwiftPackageReference */ = {
+		CC329504262586EA005F706D /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
 			requirement = {
@@ -668,7 +703,7 @@
 				minimumVersion = 2.7.0;
 			};
 		};
-		CC329508262586FB005F706D /* RemoteSwiftPackageReference */ = {
+		CC329508262586FB005F706D /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/raulriera/TextFieldEffects";
 			requirement = {
@@ -679,19 +714,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CC329501262586CC005F706D /* SwiftPackageProductDependency */ = {
+		CC329501262586CC005F706D /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CC329500262586CC005F706D /* RemoteSwiftPackageReference */;
+			package = CC329500262586CC005F706D /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		CC329505262586EA005F706D /* SwiftPackageProductDependency */ = {
+		CC329505262586EA005F706D /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CC329504262586EA005F706D /* RemoteSwiftPackageReference */;
+			package = CC329504262586EA005F706D /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
 		};
-		CC329509262586FB005F706D /* SwiftPackageProductDependency */ = {
+		CC329509262586FB005F706D /* TextFieldEffects */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CC329508262586FB005F706D /* RemoteSwiftPackageReference */;
+			package = CC329508262586FB005F706D /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
 			productName = TextFieldEffects;
 		};
 /* End XCSwiftPackageProductDependency section */

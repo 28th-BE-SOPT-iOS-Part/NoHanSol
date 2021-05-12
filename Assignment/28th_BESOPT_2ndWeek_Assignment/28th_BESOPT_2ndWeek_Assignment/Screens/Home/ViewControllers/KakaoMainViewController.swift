@@ -188,7 +188,7 @@ class KakaoMainViewController: UIViewController {
 
 extension KakaoMainViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return self.view.frame.height*50/812
+    return self.view.frame.width*50/375
   }
 }
 extension KakaoMainViewController: UITableViewDataSource {

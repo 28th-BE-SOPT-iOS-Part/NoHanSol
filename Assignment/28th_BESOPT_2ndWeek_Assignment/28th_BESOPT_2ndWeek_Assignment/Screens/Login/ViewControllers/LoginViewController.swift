@@ -124,6 +124,39 @@ class LoginViewController: UIViewController {
       }
     }
   }
+  func loginAction() {
+    LoginService.shared.login(email: self.emailTextField.text!,
+                              password: self.passwordTextField.text!) {
+      result in
+      switch result {
+      case .success(let message, let token):
+        if let message = message as? String {
+          if let userToken = token as? String {
+            UserDefaults.standard.setValue(userToken, forKey: "userToken")
+            let checkToken = UserDefaults.standard.string(forKey: "userToken")
+            print("token: \(UserDefaults.standard.string(forKey: "userToken"))")
+            print("여기야여기")
+            self.makeAlert(title: "알림", message: message, okAction: { _ in
+              guard let tabBarVC = self.storyboard?.instantiateViewController(
+                      identifier: "TabBarViewController") as? TabBarViewController else { return }
+              tabBarVC.modalPresentationStyle = .fullScreen
+              self.present(tabBarVC, animated: true, completion: {
+                self.emailTextField.text = nil
+                self.passwordTextField.text = nil
+              })
+            })
+          }
+        }
+      case .requestErr(let message):
+        if let message = message as? String {
+          self.makeAlert(title: "알림", message: message)
+        }
+      default:
+        print(result)
+        self.makeAlert(title: "알림", message: "Error")
+      }
+    }
+  }
   
   @objc func touchUpSignUp() {
     guard let signUpVC = self.storyboard?.instantiateViewController(
@@ -134,13 +167,7 @@ class LoginViewController: UIViewController {
   @objc func touchUpLogin() {
     // 1. 모든 텍스트필드에 텍스트가 있을 때
     if self.emailTextField.hasText && self.passwordTextField.hasText {
-      guard let tabBarVC = self.storyboard?.instantiateViewController(
-              identifier: "TabBarViewController") as? TabBarViewController else { return }
-      tabBarVC.modalPresentationStyle = .fullScreen
-      self.present(tabBarVC, animated: true, completion: {
-        self.emailTextField.text = nil
-        self.passwordTextField.text = nil
-      })
+      self.loginAction()
     }
     // 2. 텍스트필드 중 텍스트가 없는 텍스트필드가 존재할 때
     else {
@@ -153,4 +180,5 @@ class LoginViewController: UIViewController {
     }
   }
 }
+
 
