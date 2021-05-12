@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		31AF028813DEF08B0B39985B /* Pods_28th_BESOPT_4thWeek_Seminar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576D8B925A2CFAA7BAFE1EAD /* Pods_28th_BESOPT_4thWeek_Seminar.framework */; };
+		CC3EA7672646644F00A4C7D3 /* PersonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EA7662646644F00A4C7D3 /* PersonDataModel.swift */; };
+		CC3EA76D2646653900A4C7D3 /* GetPersonDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EA76C2646653900A4C7D3 /* GetPersonDataService.swift */; };
+		CC7540F026466F72005E6946 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7540EF26466F72005E6946 /* APIConstants.swift */; };
+		CC7540F326467042005E6946 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7540F226467042005E6946 /* LoginModel.swift */; };
+		CC7540F626467097005E6946 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7540F526467097005E6946 /* LoginService.swift */; };
+		CC7540F9264671CF005E6946 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7540F8264671CF005E6946 /* LoginViewController.swift */; };
+		CC7540FD26467302005E6946 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7540FC26467302005E6946 /* UIViewController+.swift */; };
+		CC754101264674A6005E6946 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC754100264674A6005E6946 /* SignupViewController.swift */; };
+		CC754104264675CB005E6946 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC754103264675CB005E6946 /* SignupModel.swift */; };
+		CC75410726467608005E6946 /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC75410626467608005E6946 /* SignupService.swift */; };
+		CC969B9926465D40004766D9 /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC969B9826465D40004766D9 /* CoffeeViewController.swift */; };
+		CC969B9D2646637B004766D9 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC969B9C2646637B004766D9 /* NetworkResult.swift */; };
+		CC969BA1264663C0004766D9 /* SampleNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC969BA0264663C0004766D9 /* SampleNetworkViewController.swift */; };
 		CCA1C3612646530000806551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1C3602646530000806551 /* AppDelegate.swift */; };
 		CCA1C3632646530000806551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1C3622646530000806551 /* SceneDelegate.swift */; };
 		CCA1C3652646530000806551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1C3642646530000806551 /* ViewController.swift */; };
@@ -19,6 +32,19 @@
 /* Begin PBXFileReference section */
 		576D8B925A2CFAA7BAFE1EAD /* Pods_28th_BESOPT_4thWeek_Seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_28th_BESOPT_4thWeek_Seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B250AB14047F2A3B03B54B2 /* Pods-28th_BESOPT_4thWeek_Seminar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-28th_BESOPT_4thWeek_Seminar.release.xcconfig"; path = "Target Support Files/Pods-28th_BESOPT_4thWeek_Seminar/Pods-28th_BESOPT_4thWeek_Seminar.release.xcconfig"; sourceTree = "<group>"; };
+		CC3EA7662646644F00A4C7D3 /* PersonDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataModel.swift; sourceTree = "<group>"; };
+		CC3EA76C2646653900A4C7D3 /* GetPersonDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonDataService.swift; sourceTree = "<group>"; };
+		CC7540EF26466F72005E6946 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		CC7540F226467042005E6946 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CC7540F526467097005E6946 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		CC7540F8264671CF005E6946 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC7540FC26467302005E6946 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		CC754100264674A6005E6946 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CC754103264675CB005E6946 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		CC75410626467608005E6946 /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
+		CC969B9826465D40004766D9 /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
+		CC969B9C2646637B004766D9 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		CC969BA0264663C0004766D9 /* SampleNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNetworkViewController.swift; sourceTree = "<group>"; };
 		CCA1C35D2646530000806551 /* 28th_BESOPT_4thWeek_Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 28th_BESOPT_4thWeek_Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA1C3602646530000806551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA1C3622646530000806551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +74,34 @@
 				576D8B925A2CFAA7BAFE1EAD /* Pods_28th_BESOPT_4thWeek_Seminar.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC36743626465884009C41E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EA7662646644F00A4C7D3 /* PersonDataModel.swift */,
+				CC7540F226467042005E6946 /* LoginModel.swift */,
+				CC754103264675CB005E6946 /* SignupModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC7540FB264672EC005E6946 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC7540FC26467302005E6946 /* UIViewController+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC969B9B26466365004766D9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CC3EA76C2646653900A4C7D3 /* GetPersonDataService.swift */,
+				CC7540F526467097005E6946 /* LoginService.swift */,
+				CC75410626467608005E6946 /* SignupService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CCA1C3542646530000806551 = {
@@ -81,6 +135,9 @@
 		CCA1C3792646537F00806551 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				CC7540FB264672EC005E6946 /* Extensions */,
+				CC969B9B26466365004766D9 /* Service */,
+				CC36743626465884009C41E0 /* Model */,
 				CCA1C37F2646539B00806551 /* Network */,
 				CCA1C37B2646538300806551 /* Supports */,
 			);
@@ -111,6 +168,8 @@
 		CCA1C37F2646539B00806551 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CC969B9C2646637B004766D9 /* NetworkResult.swift */,
+				CC7540EF26466F72005E6946 /* APIConstants.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -119,6 +178,10 @@
 			isa = PBXGroup;
 			children = (
 				CCA1C3642646530000806551 /* ViewController.swift */,
+				CC969B9826465D40004766D9 /* CoffeeViewController.swift */,
+				CC969BA0264663C0004766D9 /* SampleNetworkViewController.swift */,
+				CC7540F8264671CF005E6946 /* LoginViewController.swift */,
+				CC754100264674A6005E6946 /* SignupViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -261,9 +324,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7540F9264671CF005E6946 /* LoginViewController.swift in Sources */,
+				CC969B9926465D40004766D9 /* CoffeeViewController.swift in Sources */,
+				CC969B9D2646637B004766D9 /* NetworkResult.swift in Sources */,
 				CCA1C3652646530000806551 /* ViewController.swift in Sources */,
 				CCA1C3612646530000806551 /* AppDelegate.swift in Sources */,
+				CC75410726467608005E6946 /* SignupService.swift in Sources */,
+				CC3EA7672646644F00A4C7D3 /* PersonDataModel.swift in Sources */,
+				CC7540F326467042005E6946 /* LoginModel.swift in Sources */,
+				CC7540F626467097005E6946 /* LoginService.swift in Sources */,
+				CC754101264674A6005E6946 /* SignupViewController.swift in Sources */,
+				CC7540F026466F72005E6946 /* APIConstants.swift in Sources */,
+				CC7540FD26467302005E6946 /* UIViewController+.swift in Sources */,
+				CC754104264675CB005E6946 /* SignupModel.swift in Sources */,
 				CCA1C3632646530000806551 /* SceneDelegate.swift in Sources */,
+				CC969BA1264663C0004766D9 /* SampleNetworkViewController.swift in Sources */,
+				CC3EA76D2646653900A4C7D3 /* GetPersonDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB20358EA2477C6785EFCAFF /* Pods_28th_BESOPT_2ndWeek_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDF5E4CC20A9F82B0278C40 /* Pods_28th_BESOPT_2ndWeek_Assignment.framework */; };
 		CC3294C526258496005F706D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294C426258496005F706D /* AppDelegate.swift */; };
 		CC3294C726258496005F706D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294C626258496005F706D /* SceneDelegate.swift */; };
 		CC3294CE26258498005F706D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3294CD26258498005F706D /* Assets.xcassets */; };
@@ -16,9 +17,9 @@
 		CC3294EF262585F0005F706D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294EE262585F0005F706D /* LoginViewController.swift */; };
 		CC3294F526258604005F706D /* KakaoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294F426258604005F706D /* KakaoMainViewController.swift */; };
 		CC3294F92625866B005F706D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3294F82625866B005F706D /* SignUpViewController.swift */; };
-		CC329502262586CC005F706D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC329501262586CC005F706D /* SnapKit */; };
-		CC329506262586EA005F706D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = CC329505262586EA005F706D /* Then */; };
-		CC32950A262586FB005F706D /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = CC329509262586FB005F706D /* TextFieldEffects */; };
+		CC329502262586CC005F706D /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CC329501262586CC005F706D /* SwiftPackageProductDependency */; };
+		CC329506262586EA005F706D /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CC329505262586EA005F706D /* SwiftPackageProductDependency */; };
+		CC32950A262586FB005F706D /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CC329509262586FB005F706D /* SwiftPackageProductDependency */; };
 		CC80105B2635403C0020B517 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80105A2635403C0020B517 /* FriendTableViewCell.swift */; };
 		CC80105F263543650020B517 /* FriendListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80105E263543650020B517 /* FriendListModel.swift */; };
 		CC801062263548100020B517 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC801061263548100020B517 /* UITableViewCell+.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BDF5E4CC20A9F82B0278C40 /* Pods_28th_BESOPT_2ndWeek_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_28th_BESOPT_2ndWeek_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A731C948BEEE56E431D858E /* Pods-28th_BESOPT_2ndWeek_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-28th_BESOPT_2ndWeek_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-28th_BESOPT_2ndWeek_Assignment/Pods-28th_BESOPT_2ndWeek_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		CC3294C126258496005F706D /* 28th_BESOPT_2ndWeek_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 28th_BESOPT_2ndWeek_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3294C426258496005F706D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC3294C626258496005F706D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		CCF8B0BA26258AE700F65BE0 /* EmptyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTabViewController.swift; sourceTree = "<group>"; };
 		CCF8B0C126258E5000F65BE0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CCF8B0C82625908200F65BE0 /* KakaoProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoProfileViewController.swift; sourceTree = "<group>"; };
+		D5B4D0CC4FFD0964C312D75D /* Pods-28th_BESOPT_2ndWeek_Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-28th_BESOPT_2ndWeek_Assignment.release.xcconfig"; path = "Target Support Files/Pods-28th_BESOPT_2ndWeek_Assignment/Pods-28th_BESOPT_2ndWeek_Assignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +72,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC32950A262586FB005F706D /* TextFieldEffects in Frameworks */,
-				CC329502262586CC005F706D /* SnapKit in Frameworks */,
-				CC329506262586EA005F706D /* Then in Frameworks */,
+				CC32950A262586FB005F706D /* BuildFile in Frameworks */,
+				CC329502262586CC005F706D /* BuildFile in Frameworks */,
+				CC329506262586EA005F706D /* BuildFile in Frameworks */,
+				AB20358EA2477C6785EFCAFF /* Pods_28th_BESOPT_2ndWeek_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07A9F6E00DD6639CA657B069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BDF5E4CC20A9F82B0278C40 /* Pods_28th_BESOPT_2ndWeek_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE178DFB8BA2DA9A964B1932 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A731C948BEEE56E431D858E /* Pods-28th_BESOPT_2ndWeek_Assignment.debug.xcconfig */,
+				D5B4D0CC4FFD0964C312D75D /* Pods-28th_BESOPT_2ndWeek_Assignment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC0E803B26353E3F00461710 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +193,8 @@
 			children = (
 				CC3294C326258496005F706D /* 28th_BESOPT_2ndWeek_Assignment */,
 				CC3294C226258496005F706D /* Products */,
+				AE178DFB8BA2DA9A964B1932 /* Pods */,
+				07A9F6E00DD6639CA657B069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC3294D526258498005F706D /* Build configuration list for PBXNativeTarget "28th_BESOPT_2ndWeek_Assignment" */;
 			buildPhases = (
+				B2B0E6947F0F06BB53001E84 /* [CP] Check Pods Manifest.lock */,
 				CC3294BD26258496005F706D /* Sources */,
 				CC3294BE26258496005F706D /* Frameworks */,
 				CC3294BF26258496005F706D /* Resources */,
+				4FF655668593933BCA813363 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,9 +328,9 @@
 			);
 			name = 28th_BESOPT_2ndWeek_Assignment;
 			packageProductDependencies = (
-				CC329501262586CC005F706D /* SnapKit */,
-				CC329505262586EA005F706D /* Then */,
-				CC329509262586FB005F706D /* TextFieldEffects */,
+				CC329501262586CC005F706D /* SwiftPackageProductDependency */,
+				CC329505262586EA005F706D /* SwiftPackageProductDependency */,
+				CC329509262586FB005F706D /* SwiftPackageProductDependency */,
 			);
 			productName = 28th_BESOPT_2ndWeek_Assignment;
 			productReference = CC3294C126258496005F706D /* 28th_BESOPT_2ndWeek_Assignment.app */;
@@ -333,9 +360,9 @@
 			);
 			mainGroup = CC3294B826258495005F706D;
 			packageReferences = (
-				CC329500262586CC005F706D /* XCRemoteSwiftPackageReference "SnapKit" */,
-				CC329504262586EA005F706D /* XCRemoteSwiftPackageReference "Then" */,
-				CC329508262586FB005F706D /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				CC329500262586CC005F706D /* RemoteSwiftPackageReference */,
+				CC329504262586EA005F706D /* RemoteSwiftPackageReference */,
+				CC329508262586FB005F706D /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = CC3294C226258496005F706D /* Products */;
 			projectDirPath = "";
@@ -362,6 +389,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FF655668593933BCA813363 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-28th_BESOPT_2ndWeek_Assignment/Pods-28th_BESOPT_2ndWeek_Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-28th_BESOPT_2ndWeek_Assignment/Pods-28th_BESOPT_2ndWeek_Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-28th_BESOPT_2ndWeek_Assignment/Pods-28th_BESOPT_2ndWeek_Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B0E6947F0F06BB53001E84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-28th_BESOPT_2ndWeek_Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC3294BD26258496005F706D /* Sources */ = {
@@ -521,6 +590,7 @@
 		};
 		CC3294D626258498005F706D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A731C948BEEE56E431D858E /* Pods-28th_BESOPT_2ndWeek_Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -540,6 +610,7 @@
 		};
 		CC3294D726258498005F706D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B4D0CC4FFD0964C312D75D /* Pods-28th_BESOPT_2ndWeek_Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -581,7 +652,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CC329500262586CC005F706D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		CC329500262586CC005F706D /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -589,7 +660,7 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		CC329504262586EA005F706D /* XCRemoteSwiftPackageReference "Then" */ = {
+		CC329504262586EA005F706D /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
 			requirement = {
@@ -597,7 +668,7 @@
 				minimumVersion = 2.7.0;
 			};
 		};
-		CC329508262586FB005F706D /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+		CC329508262586FB005F706D /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/raulriera/TextFieldEffects";
 			requirement = {
@@ -608,19 +679,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CC329501262586CC005F706D /* SnapKit */ = {
+		CC329501262586CC005F706D /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CC329500262586CC005F706D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = CC329500262586CC005F706D /* RemoteSwiftPackageReference */;
 			productName = SnapKit;
 		};
-		CC329505262586EA005F706D /* Then */ = {
+		CC329505262586EA005F706D /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CC329504262586EA005F706D /* XCRemoteSwiftPackageReference "Then" */;
+			package = CC329504262586EA005F706D /* RemoteSwiftPackageReference */;
 			productName = Then;
 		};
-		CC329509262586FB005F706D /* TextFieldEffects */ = {
+		CC329509262586FB005F706D /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CC329508262586FB005F706D /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			package = CC329508262586FB005F706D /* RemoteSwiftPackageReference */;
 			productName = TextFieldEffects;
 		};
 /* End XCSwiftPackageProductDependency section */
