@@ -34,6 +34,7 @@
 		CCF35919264C1136008B7E51 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35918264C1136008B7E51 /* UIViewController+.swift */; };
 		CCF3591C264C1141008B7E51 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3591B264C1141008B7E51 /* LoginModel.swift */; };
 		CCF3591F264C1165008B7E51 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3591E264C1165008B7E51 /* SignupModel.swift */; };
+		CCF35925264EC173008B7E51 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF35924264EC173008B7E51 /* SignUp.storyboard */; };
 		CCF8B0A226258A9000F65BE0 /* SecondTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */; };
 		CCF8B0A526258A9B00F65BE0 /* ThirdTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */; };
 		CCF8B0A826258AA100F65BE0 /* FourthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */; };
@@ -71,6 +72,7 @@
 		CCF35918264C1136008B7E51 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		CCF3591B264C1141008B7E51 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		CCF3591E264C1165008B7E51 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		CCF35924264EC173008B7E51 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		CCF8B0A126258A9000F65BE0 /* SecondTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondTab.storyboard; sourceTree = "<group>"; };
 		CCF8B0A426258A9B00F65BE0 /* ThirdTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdTab.storyboard; sourceTree = "<group>"; };
 		CCF8B0A726258AA100F65BE0 /* FourthTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthTab.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		CC0E804126353E7600461710 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				CCF35924264EC173008B7E51 /* SignUp.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				CCF8B0AB26258AA900F65BE0 /* FifthTab.storyboard in Resources */,
 				CC3294CE26258498005F706D /* Assets.xcassets in Resources */,
 				CCF8B0A226258A9000F65BE0 /* SecondTab.storyboard in Resources */,
+				CCF35925264EC173008B7E51 /* SignUp.storyboard in Resources */,
 				CC3294E6262585AD005F706D /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

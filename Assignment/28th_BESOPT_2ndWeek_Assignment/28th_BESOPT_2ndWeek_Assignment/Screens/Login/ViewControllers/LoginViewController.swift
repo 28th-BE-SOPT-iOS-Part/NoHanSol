@@ -140,10 +140,7 @@ class LoginViewController: UIViewController {
               guard let tabBarVC = self.storyboard?.instantiateViewController(
                       identifier: "TabBarViewController") as? TabBarViewController else { return }
               tabBarVC.modalPresentationStyle = .fullScreen
-              self.present(tabBarVC, animated: true, completion: {
-                self.emailTextField.text = nil
-                self.passwordTextField.text = nil
-              })
+              self.navigationController?.pushViewController(tabBarVC, animated: true)
             })
           }
         }

@@ -11,7 +11,7 @@ import Then
 import UIKit
 
 class SignUpViewController: UIViewController {
-    
+  
   // MARK: - LifeCycles
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -117,26 +117,26 @@ class SignUpViewController: UIViewController {
   }
   func signupAction() {
     SignupService.shared.signup(email: self.emailTextField.text!,
-                              password: self.passwordTextField.text!) {
+                                password: self.passwordTextField.text!) {
       result in
-      print(result)
       switch result {
       case .success(let message):
         if let message = message as? String {
-          self.makeAlert(title: "알림", message: message, okAction: { _ in
-            guard let kakaoVC = self.storyboard?.instantiateViewController(
-                    identifier: "KakaoMainViewController") as? KakaoMainViewController else { return }
-            kakaoVC.modalPresentationStyle = .fullScreen
-            self.present(kakaoVC, animated: true, completion: {
-                          self.navigationController?.popViewController(animated: false)})
-          })
+            self.makeAlert(title: "알림", message: message, okAction: { _ in
+              guard let tabBarVC = self.storyboard?.instantiateViewController(
+                      identifier: "TabBarViewController") as? TabBarViewController else { return }
+              tabBarVC.modalPresentationStyle = .fullScreen
+              self.navigationController?.pushViewController(tabBarVC, animated: true)
+            })
         }
       case .requestErr(let message):
         if let message = message as? String {
           self.makeAlert(title: "알림", message: message)
         }
       default:
-        self.makeAlert(title: "알림", message: "error")
+        print(result)
+        print("여기야여기")
+        self.makeAlert(title: "알림", message: "Error")
       }
     }
   }
@@ -160,7 +160,7 @@ class SignUpViewController: UIViewController {
       }
       // 1-2. 텍스트필드 모두 텍스트가 입력되고 패스워드도 일치할 때
       else {
-       signupAction()
+        signupAction()
       }
     }
     // 2. 텍스트필드에 하나라도 입력값이 없을 때 UIAlertController를 띄워 노티를 제공
